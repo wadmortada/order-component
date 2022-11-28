@@ -5,8 +5,8 @@
 
 body {
     background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: round;
-    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 100vw;
 
 }
 
@@ -19,15 +19,51 @@ body {
 
 .container {
     max-width: 330px;
-    border-radius: 10px;
 }
 
 .card-img img {
     width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .card-content {
     text-align: center;
     padding: 1.5rem;
-    background-color: white;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    display: flex;
+    gap: 0.5rem;
+    background-color: darkgray;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.75rem;
+}
+
+.change-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+button {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    background-color: lightskyblue;
+    border-radius: 1rem;
+    border: none;
+}
+
+.cancel-btn a {
+    text-decoration: none;
+    
 }
